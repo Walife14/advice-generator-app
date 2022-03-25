@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Advice generator app</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js"></script>
+  <script src="app.js" async></script>
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -17,11 +17,11 @@
 
   <div class="wrapper">
     <div class="container">
-      <h1>Advice #<!-- Advice ID goes here --></h1>
-      <p id="advice-text">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+      <h1>Advice #<span id="aid"></span></h1>
+      <p id="advice-text"></p>
       <img class="divider-mobile" src="./images/pattern-divider-mobile.svg" alt="divider">
       <img class="divider-desktop" src="./images/pattern-divider-desktop.svg" alt="divider">
-      <div>
+      <div id="advice-btn">
         <img src="./images/icon-dice.svg" alt="Image of dice">
       </div>
     </div>
