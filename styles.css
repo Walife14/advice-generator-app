@@ -32,7 +32,15 @@ body {
     height: 100vh;
 }
 
-/* Advice State */
+.divider-mobile {
+    display: block;
+    margin: 20px auto 40px auto;
+}
+.divider-desktop {
+    display: none;
+}
+
+/* Advice modal */
 
 .container {
     position: relative;
@@ -57,10 +65,6 @@ body {
     font-weight: 800;
     text-align: center;
 }
-.container > img {
-    display: block;
-    margin: 20px auto 40px auto;
-}
 .container > div {
     position: absolute;
     bottom: 0;
@@ -73,10 +77,30 @@ body {
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .container > div:hover {
     box-shadow: 0px 0px 25px var(--neon-green);
 }
 .container > div:active {
     box-shadow: 0px 0px 15px var(--neon-green);
+}
+
+/* Desktop View */
+@media screen and (min-width: 1440px) {
+
+    /* General Styling */
+    .divider-mobile {
+        display: none;
+    }
+    .divider-desktop {
+        display: block;
+        margin: 40px auto 40px auto;
+    }
+
+    /* Advice modal */
+    .container {
+        width: 500px;
+    }
+
 }
