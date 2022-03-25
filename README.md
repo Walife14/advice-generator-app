@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![Screenshot 2022-03-25 at 21-54-43 Frontend Mentor Advice generator app](https://user-images.githubusercontent.com/58853488/160207671-1879f7b5-eb14-4d84-b31c-99cb0258060f.png)
 
 ### Links
 
